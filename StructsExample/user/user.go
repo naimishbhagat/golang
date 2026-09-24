@@ -23,13 +23,13 @@ func NewAdmin(email, password string) Admin{
 	return Admin {
 		email: email,
 		password: password,
-		User{
+		User: User{
 			firstName: "ADMIN",
 			lastName: "Admin",
 			birthDate: "12/04/1983",
-			createdAt: time.Now()	
-		}
-	}
+			createdAt: time.Now(),
+		},
+	}	
 }
 func (u *User) OutputUserDetails(){
 	fmt.Println(u.firstName, u.lastName,u.birthDate)
